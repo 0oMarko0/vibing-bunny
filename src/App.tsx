@@ -1,12 +1,15 @@
 import React from 'react';
 import Bunny from './Bunny';
-import { Spotify } from './Spotify';
 
 export const App: React.FC = () => {
+    const style = {
+        margin: 0,
+        padding: 0,
+    };
+
     return (
-        <div className="container-fluid">
-            <Spotify />
-            <div className="container">
+        <div className="container-fluid" style={style}>
+            <div className="container" style={style}>
                 <Bunny />
             </div>
         </div>
