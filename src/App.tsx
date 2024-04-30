@@ -1,5 +1,6 @@
 import React from 'react';
 import Bunny from './Bunny';
+import { Spotify } from './Spotify';
 
 export const App: React.FC = () => {
     const style = {
@@ -8,11 +9,12 @@ export const App: React.FC = () => {
     };
 
     return (
-        <div className="container-fluid" style={style}>
-            <div className="container" style={style}>
-                <Bunny />
+        <>
+            <Bunny />
+            <div>
+                <Spotify />
             </div>
-        </div>
+        </>
     );
 };
 

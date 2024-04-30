@@ -10,7 +10,7 @@ export const Bunny: React.FC = () => {
     };
 
     return (
-        <div className="container" style={style}>
+        <div style={style}>
             {[...Array(nbRow)].map((e, i) => (
                 <div key={i} className="grid" style={{ gridColumnGap: 0 }}>
                     {[...Array(nbBunny)].map((b, j) => (
